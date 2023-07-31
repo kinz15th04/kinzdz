@@ -18,7 +18,7 @@ local Y = X.New({
 local A = Y.Button({
 	Text = "Selected no Type",
 	Callback = function()
-		if Type == "Start Dataloss" then
+		if Type == "freeza data" then
 for i,v in pairs(game:GetService("Players").LocalPlayer.PlayerGui.MainGui.Pets.Main.Scroll:GetDescendants()) do
 if v.Name == "UID" then
 local args = {
@@ -34,7 +34,7 @@ break
 end
 end
 TextField:SetText("Started")
-		elseif Type == "Undo Dataloss" then
+		elseif Type == "Undo freeza" then
 for i = 1,100 do
 local args = {
     [1] = i
