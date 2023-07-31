@@ -34,7 +34,7 @@ break
 end
 end
 TextField:SetText("Started")
-		elseif Type == "Undo freeza" then
+		elseif Type == "Undo Dataloss" then
 for i = 1,100 do
 local args = {
     [1] = i
@@ -53,7 +53,7 @@ local D = Y.Dropdown({
 		getgenv().Type = Value
 	end,
 	Options = {
-		"freeza data",
+		"Start Dataloss",
 		"Undo Dataloss"
 	}
 })
