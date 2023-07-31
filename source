@@ -58,20 +58,6 @@ local D = Y.Dropdown({
 	}
 })
 
-local AE = Y.Button({
-	Text = "ko co gi dau em",
-	Callback = function()
-		print("ko co gi dau em")
-	end
-})
-
-local AE2 = Y.Button({
-	Text = "nhin cc gi",
-	Callback = function()
-		setclipboard("nhin cc gi")
-	end
-})
-
 getgenv().TextField = Y.TextField({
   Text = "Status",
   Type = "Default"
