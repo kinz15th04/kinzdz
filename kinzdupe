@@ -1,15 +1,3 @@
-function Return_Lowest_Unit(Unit_Table)
-    local Lowest_Level, Lowest_Unit = math.huge
-    
-    for _, Unit in ipairs(Unit_Table) do
-            if Unit["Level"] < Lowest_Level then
-                Lowest_Level = Unit["Level"]
-                Lowest_Unit = Unit
-            end
-    end
-    
-    return Lowest_Unit
-end
   if game.PlaceId == 6299805723 then
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Kinzdzdz | Dupe AFS", HidePremium = true, Intro = true,IntroText = "Kinzdzdz",  SaveConfig = true, ConfigFolder = "kinzdivi"})
@@ -23,13 +11,11 @@ local Tab = Window:MakeTab({
 Tab:AddButton({
 	Name = "Data Loss",
 	Callback = function()
-      		local args = {
-            [1] = Return_Lowest_Unit(require(game.ReplicatedStorage.ModuleScripts.LocalDairebStore).GetStoreProxy("GameData"):GetData("Pets")).UID,
-            [2] = true,
-            [3] = "\191"
-        }
-
-        game:GetService("ReplicatedStorage"):WaitForChild("Remote"):WaitForChild("PetVault"):FireServer(unpack(args))
+      		game:GetService("StarterGui"):SetCore("SendNotification", { 
+			Title = "co cai lon dupe";
+			Text = "abcxyznmasad";
+			Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
+			Duration = 10; 
   	end    
 })
 
